@@ -162,7 +162,7 @@ http://apinba.local:8082/jugadores/Kobe%20Bryant
 
 http://apinba.local:8082/jugador/fisico/Kobe%20Bryant
 <p align="left">
-  <img width="500" height="400" src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryG.PNG?raw=true">
+  <img width="700" height="400" src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryG.PNG?raw=true">
 </p>
 
 ## Query H
@@ -178,7 +178,7 @@ http://apinba.local:8082/estadisticas/jugador/Kobe%20Bryant
 
 http://apinba.local:8082/estadisticas/jugador/Kobe%20Bryant/avg
 <p align="left">
-  <img width="500" height="400" src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryI.PNG?raw=true">
+  <img width="700" height="400" src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryI.PNG?raw=true">
 </p>
 
 ## Query J
@@ -186,7 +186,7 @@ http://apinba.local:8082/estadisticas/jugador/Kobe%20Bryant/avg
 
 http://apinba.local:8082/partidos/resultados/local/Lakers
 <p align="left">
-  <img width="500" height="400" src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryJ.PNG?raw=true">
+  <img width="700" height="400" src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryJ.PNG?raw=true">
 </p>
 
 ## Query K
@@ -210,5 +210,5 @@ http://apinba.local:8082/partidos/resultados/media/local/Lakers
 
 http://apinba.local:8082/partidos/resultados/media/visitante/Lakers
 <p align="left">
-  <img width="500" height="400" src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryM.PNG?raw=true">
+  <img width="700" height="400" src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryM.PNG?raw=true">
 </p>
