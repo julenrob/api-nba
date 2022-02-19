@@ -8,14 +8,14 @@ APACHE_DOCUMENT_ROOT=/code/public
 Cambiamos el nombre del contenedor por apinba dentro de docker-compose.yml
 
 Levantar el contenedor
-docker-compose up -d
+**docker-compose up -d**
 
 Acceder a la terminal Linux del contenedor
-docker-compose exec web bash
+**docker-compose exec web bash**
 
 Una vez dentro del contenedor:
 Crear estructura symfony
-symfony new api-nba --version=4.4 --full --no-git
+**symfony new api-nba --version=4.4 --full --no-git**
 
 Se nos habrá creado un directorio llamado api-nba donde nos habrá creado todos los archivos y carpetas necesarios de Symfony.
 
@@ -38,8 +38,8 @@ Tiene que quedar así:
 ![image1](https://github.com/julenrob/api-nba/blob/master/Readme%20Images/1.png?raw=true)
 
 Permisos para todos a las carpetas cache y log dentro de var:
-root@440a097a8522:/code# chmod -R 777 var/cache/*
-root@440a097a8522:/code# chmod -R 777 var/log/
+**root@440a097a8522:/code# chmod -R 777 var/cache/***
+**root@440a097a8522:/code# chmod -R 777 var/log/**
 
 Fichero .env donde tenemos las variables de conexión a la base de datos:
 
@@ -58,7 +58,7 @@ De esta forma, si en el futuro necesitáramos poner la base de datos a sus valor
 
 Redireccionamos el script sql de creación de la estructura de la base de datos nba con el siguiente comando:
 
-mysql -u root -pdbrootpass -h add-dbms < files/nba_2022-02-02.sql
+**mysql -u root -pdbrootpass -h add-dbms < files/nba_2022-02-02.sql**
 
 
 Conectamos datagrip a la base de datos nba con el puerto 33006 y el usuario root y contraseña dbrootpass.
@@ -74,7 +74,7 @@ Siguiendo este ejemplo realizaremos la carga de datos en la base de datos, sin o
 Una vez tenemos dentro de la base de datos los datos, pasamos a crear las Entities con las que vamos a trabajar (es el formato que entiende Symfony para los distintos objetos de la base de datos).
 Dentro del container ejecuta:
 (Este comando convierte las tablas y sus registros al lenguaje que entiende Symfony para poder trabajar).
-php bin/console doctrine:mapping:convert annotation src/Entity --from-database
+**php bin/console doctrine:mapping:convert annotation src/Entity --from-database**
 
 Ahora dentro de cada Entity creado añadimos el namespace App\Entity; y en las claves foráneas quitamos las barras al tipo de dato, acto seguido generamos los getters y setters para cada Entity y borramos los setters de las claves primarias.
 
@@ -93,7 +93,7 @@ https://github.com/beberlei/DoctrineExtensions
 Para cuando necesites usar el group concat, dateFormat, round (redondear), entre otros bundles externos a los que trae Symfony por defecto.
 
 
-Dentro del container ejecuta composer require beberlei/doctrineextensions (tumba el container y vuelve a levantarlo).
+Dentro del container ejecuta composer **require beberlei/doctrineextensions** (tumba el container y vuelve a levantarlo).
 
 Dentro de config/pacakges/doctrine.yaml añade las siguientes líneas:
 
@@ -104,7 +104,7 @@ round: DoctrineExtensions\Query\Mysql\Round
 ![image4](https://github.com/julenrob/api-nba/blob/master/Readme%20Images/4.png?raw=true)
 
 PARA LA ENTREGA DEL PROYECTO EJECUTAR LOS COMANDOS:
-rm -r var/cache/*
-rm -r var/log/*
-rm -r vendor/*
+**rm -r var/cache/***
+**rm -r var/log/***
+**rm -r vendor/***
 Zip del container entero
