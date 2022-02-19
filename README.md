@@ -202,7 +202,7 @@ http://apinba.local:8082/partidos/resultados/visitante/Lakers
 
 http://apinba.local:8082/partidos/resultados/media/local/Lakers
 <p align="left">
-  <img width="500" height="400" src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryL.PNG?raw=true">
+  <img width="800" height="400" src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryL.PNG?raw=true">
 </p>
 
 ## Query M
@@ -210,5 +210,5 @@ http://apinba.local:8082/partidos/resultados/media/local/Lakers
 
 http://apinba.local:8082/partidos/resultados/media/visitante/Lakers
 <p align="left">
-  <img width="700" height="400" src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryM.PNG?raw=true">
+  <img width="800" height="400" src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryM.PNG?raw=true">
 </p>
