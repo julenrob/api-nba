@@ -130,7 +130,7 @@ http://apinba.local:8082/equipos/Lakers
 
 http://apinba.local:8082/equipo/jugadores
 <p align="left">
-  <img width="300" height="300" src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryC.PNG?raw=true">
+  <img width="400" height="400" src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryC.PNG?raw=true">
 </p>
 
 ## Query D
