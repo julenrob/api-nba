@@ -116,3 +116,99 @@ http://apinba.local:8082/equipos
 <p align="left">
   <img width="300" height="300" src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryA.PNG?raw=true">
 </p>
+
+## Query B
+**Listará para un equipo dado su nombre, toda la información que tiene.**
+
+http://apinba.local:8082/equipos/Lakers
+<p align="left">
+  <img width="300" height="300" src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryB.PNG?raw=true">
+</p>
+
+## Query C
+**Listará para cada equipo todos sus jugadores.**
+
+http://apinba.local:8082/equipo/jugadores
+<p align="left">
+  <img width="300" height="300" src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryC.PNG?raw=true">
+</p>
+
+## Query D
+**Listará para cada equipo dado su nombre, todos sus jugadores.**
+
+http://apinba.local:8082/equipo/jugadores/Bulls
+<p align="left">
+  <img width="300" height="300" src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryD.PNG?raw=true">
+</p>
+
+## Query E
+**Listará para cada jugador, toda la información que tiene.**
+
+http://apinba.local:8082/jugadores
+<p align="left">
+  <img width="300" height="300" src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryE.PNG?raw=true">
+</p>
+
+## Query F
+**Listará para un jugador dado su nombre, toda la información que tiene.**
+
+http://apinba.local:8082/jugadores/Kobe%20Bryant
+<p align="left">
+  <img width="300" height="300" src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryF.PNG?raw=true">
+</p>
+
+## Query G
+**Listará para un jugador dado su nombre, altura en cm y peso en kg y su posición.**
+
+http://apinba.local:8082/jugador/fisico/Kobe%20Bryant
+<p align="left">
+  <img width="300" height="300" src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryG.PNG?raw=true">
+</p>
+
+## Query H
+**Listará para un jugador dado todas sus estadisticas que tenga registradas en la base de datos.**
+
+http://apinba.local:8082/estadisticas/jugador/Kobe%20Bryant
+<p align="left">
+  <img width="300" height="300" src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryH.PNG?raw=true">
+</p>
+
+## Query I
+**Listará para un jugador dado su nombre, la media de todas sus estadísticas que tenga registradas en la base de datos.**
+
+http://apinba.local:8082/estadisticas/jugador/Kobe%20Bryant/avg
+<p align="left">
+  <img width="300" height="300" src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryI.PNG?raw=true">
+</p>
+
+## Query J
+**Listará para un equipo dado su nombre, todos los resultados en los que ha jugado como local.**
+
+http://apinba.local:8082/partidos/resultados/local/Lakers
+<p align="left">
+  <img width="300" height="300" src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryJ.PNG?raw=true">
+</p>
+
+## Query K
+**Listará para un equipo dado su nombre, todos los resultados en los que ha jugado como visitante.**
+
+http://apinba.local:8082/partidos/resultados/visitante/Lakers
+<p align="left">
+  <img width="300" height="300" src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryK.PNG?raw=true">
+</p>
+
+## Query L
+**Listará para un equipo dado su nombre, la media de puntos recibidos como local.**
+
+http://apinba.local:8082/partidos/resultados/media/local/Lakers
+<p align="left">
+  <img width="300" height="300" src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryL.PNG?raw=true">
+</p>
+
+## Query M
+**Listará para un equipo dado su nombre, la media de puntos recibidos como visitante.**
+
+http://apinba.local:8082/partidos/resultados/media/visitante/Lakers
+<p align="left">
+  <img width="300" height="300" src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryM.PNG?raw=true">
+</p>
