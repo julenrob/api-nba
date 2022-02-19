@@ -109,7 +109,7 @@ PARA LA ENTREGA DEL PROYECTO EJECUTAR LOS COMANDOS:
 **rm -r vendor/***
 Zip del container entero
 
-###### QueryA
+## QueryA
 **Listará para cada equipo, toda la información que tiene.**
 
 http://apinba.local:8082/equipos
