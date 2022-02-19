@@ -1,6 +1,6 @@
 # api-nba
 
-Dentro de .env.webapp:
+Dentro de .env.webapp:  
 **APACHE_SERVER_NAME=apinba.local**  
 **APACHE_SERVER_ALIAS=apinba.local**  
 **APACHE_DOCUMENT_ROOT=/code/public**  
