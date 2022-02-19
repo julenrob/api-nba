@@ -1,0 +1,68 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+# A) WORKING
+teamsInfo:
+  path: equipos
+  controller: App\Controller\EquiposController::teamsInfo
+
+#  B) WORKING
+teamsInfoByName:
+  path: equipos/{nombre}
+  controller: App\Controller\EquiposController::teamsInfoByName
+
+#  C) WORKING
+playersTeam:
+  path: equipo/jugadores
+  controller: App\Controller\EquiposController::playersTeam
+
+#  D) WORKING
+playersNameByTeam:
+  path: equipo/jugadores/{nombre}
+  controller: App\Controller\EquiposController::playersNameByTeam
+
+#  E) WORKING
+playersInfo:
+  path: jugadores
+  controller: App\Controller\JugadoresController::playersInfo
+
+#  F) WORKING
+playersInfoByName:
+  path: jugadores/{nombre}
+  controller: App\Controller\JugadoresController::playersInfoByName
+
+# G) WORKING
+playerHighWeight:
+  path: jugador/fisico/{nombre}
+  controller: App\Controller\JugadoresController::playerHighWeight
+
+# H) WORKING
+playerStatistics:
+  path: estadisticas/jugador/{nombre}
+  controller: App\Controller\EstadisticasController::playerStatistics
+
+# I)  WORKING
+playerStatisticsAvg:
+  path: estadisticas/jugador/{nombre}/avg
+  controller: App\Controller\EstadisticasController::playerStatisticsAvg
+
+# J) WORKING
+localResultsByTeamName:
+  path: partidos/resultados/local/{nombre}
+  controller: App\Controller\PartidosController::localResultsByTeamName
+
+# K) WORKING
+visitorResultsByTeamName:
+  path: partidos/resultados/visitante/{nombre}
+  controller: App\Controller\PartidosController::visitorResultsByTeamName
+
+# L) WORKING
+avgReceivedPointsAsLocalByTeamName:
+  path: partidos/resultados/media/local/{nombre}
+  controller: App\Controller\PartidosController::avgReceivedPointsAsLocalByTeamName
+
+# M) WORKING
+avgReceivedPointsAsVisitorByTeamName:
+  path: partidos/resultados/media/visitante/{nombre}
+  controller: App\Controller\PartidosController::avgReceivedPointsAsVisitorByTeamName
