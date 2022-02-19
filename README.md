@@ -109,6 +109,9 @@ PARA LA ENTREGA DEL PROYECTO EJECUTAR LOS COMANDOS:
 **rm -r vendor/***
 Zip del container entero
 
+###### QueryA
+**Listará para cada equipo, toda la información que tiene.**
+
 http://apinba.local:8082/equipos
 <p align="left">
   <img width="300" height="300" src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryA.PNG?raw=true">
