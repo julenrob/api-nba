@@ -34,8 +34,9 @@ Dentro de la carpeta provisisioning/sites-enabled cambia las siguientes líneas 
 
 Tiene que quedar así:
 
-
-![image1](https://github.com/julenrob/api-nba/blob/master/Readme%20Images/1.png?raw=true)
+<p align="center">
+  <img src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/1.png?raw=true">
+</p>
 
 Permisos para todos a las carpetas cache y log dentro de var:
 **root@440a097a8522:/code# chmod -R 777 var/cache/***
@@ -65,11 +66,15 @@ Conectamos datagrip a la base de datos nba con el puerto 33006 y el usuario root
 
 Para introducir la información en la base de datos de los archivos .csv utilizaremos python.
 
-![image2](https://github.com/julenrob/api-nba/blob/master/Readme%20Images/2.png?raw=true)
+<p align="center">
+  <img src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/2.png?raw=true">
+</p>
 
 Siguiendo este ejemplo realizaremos la carga de datos en la base de datos, sin olvidarnos de el orden correcto, equipos, jugadores, partidos y estadísticas (al haber claves foráneas que apuntan a otras tablas de no crearlas en el orden correcto tendríamos fallos).
 
-![image3](https://github.com/julenrob/api-nba/blob/master/Readme%20Images/3.png?raw=true)
+<p align="center">
+  <img src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/3.png?raw=true">
+</p>
 
 Una vez tenemos dentro de la base de datos los datos, pasamos a crear las Entities con las que vamos a trabajar (es el formato que entiende Symfony para los distintos objetos de la base de datos).
 Dentro del container ejecuta:
@@ -101,7 +106,9 @@ Dentro de config/pacakges/doctrine.yaml añade las siguientes líneas:
 **date_format: DoctrineExtensions\Query\Mysql\DateFormat**  
 **round: DoctrineExtensions\Query\Mysql\Round**  
 
-![image4](https://github.com/julenrob/api-nba/blob/master/Readme%20Images/4.png?raw=true)
+<p align="center">
+  <img src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/4.png?raw=true">
+</p>
 
 PARA LA ENTREGA DEL PROYECTO EJECUTAR LOS COMANDOS:
 **rm -r var/cache/***  
