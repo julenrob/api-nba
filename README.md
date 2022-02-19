@@ -122,7 +122,7 @@ http://apinba.local:8082/equipos
 
 http://apinba.local:8082/equipos/Lakers
 <p align="left">
-  <img width="350" height="300" src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryB.PNG?raw=true">
+  <img width="400" height="300" src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryB.PNG?raw=true">
 </p>
 
 ## Query C
