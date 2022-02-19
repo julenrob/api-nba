@@ -108,3 +108,7 @@ PARA LA ENTREGA DEL PROYECTO EJECUTAR LOS COMANDOS:
 **rm -r var/log/***
 **rm -r vendor/***
 Zip del container entero
+
+http://apinba.local:8082/equipos
+![Query1](https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryA.PNG?raw=true)
+
