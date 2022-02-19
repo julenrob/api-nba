@@ -22,7 +22,7 @@ Se nos habrá creado un directorio llamado api-nba donde nos habrá creado todos
 Borramos los archivos “docker-compose.override.yml” y “docker-compose.yml” (para no sobrescribir el docker-compose.yml que usa el contenedor).
 
 Ahora movemos todos los archivos y directorios de esta carpeta a la carpeta superior /code.
-(Situándonos en la carpeta /code ejecuta mv api-nba/* . y ejecuta mv api-nba/.env .).
+(Situándonos en la carpeta /code ejecuta **mv api-nba/* .** y ejecuta **mv api-nba/.env .**).
 
 Una vez hecho esto borra la carpeta api-nba.
 
