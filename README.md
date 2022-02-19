@@ -111,5 +111,5 @@ Zip del container entero
 
 http://apinba.local:8082/equipos
 <p align="center">
-![Query1](https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryA.PNG?raw=true)
+  <img src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/QueryA.PNG?raw=true">
 </p>
