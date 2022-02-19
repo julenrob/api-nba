@@ -1,9 +1,9 @@
 # api-nba
 
 Dentro de .env.webapp:
-APACHE_SERVER_NAME=apinba.local
-APACHE_SERVER_ALIAS=apinba.local
-APACHE_DOCUMENT_ROOT=/code/public
+**APACHE_SERVER_NAME=apinba.local**
+**APACHE_SERVER_ALIAS=apinba.local**
+**APACHE_DOCUMENT_ROOT=/code/public**
 
 Cambiamos el nombre del contenedor por apinba dentro de docker-compose.yml
 
