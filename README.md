@@ -38,9 +38,9 @@ Tiene que quedar así:
   <img src="https://github.com/julenrob/api-nba/blob/master/Readme%20Images/1.png?raw=true">
 </p>
 
-Permisos para todos a las carpetas cache y log dentro de var:
-**root@440a097a8522:/code# chmod -R 777 var/cache/***
-**root@440a097a8522:/code# chmod -R 777 var/log/**
+Permisos para todos a las carpetas cache y log dentro de var:  
+**root@440a097a8522:/code# chmod -R 777 var/cache/***  
+**root@440a097a8522:/code# chmod -R 777 var/log/**  
 
 Fichero .env donde tenemos las variables de conexión a la base de datos:
 
