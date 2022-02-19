@@ -1,9 +1,9 @@
 # api-nba
 
 Dentro de .env.webapp:
-**APACHE_SERVER_NAME=apinba.local**
-**APACHE_SERVER_ALIAS=apinba.local**
-**APACHE_DOCUMENT_ROOT=/code/public**
+**APACHE_SERVER_NAME=apinba.local**  
+**APACHE_SERVER_ALIAS=apinba.local**  
+**APACHE_DOCUMENT_ROOT=/code/public**  
 
 Cambiamos el nombre del contenedor por apinba dentro de docker-compose.yml
 
@@ -27,10 +27,10 @@ Ahora movemos todos los archivos y directorios de esta carpeta a la carpeta supe
 Una vez hecho esto borra la carpeta api-nba.
 
 Dentro de la carpeta provisisioning/sites-enabled cambia las siguientes líneas por:
-**ServerName apinba.local**
-**ServerAlias apinba.local**
-**DocumentRoot /code/public/**
-**<Directory "/code/public">**
+**ServerName apinba.local**  
+**ServerAlias apinba.local**  
+**DocumentRoot /code/public/**  
+**<Directory "/code/public">**  
 
 Tiene que quedar así:
 
@@ -43,11 +43,11 @@ Permisos para todos a las carpetas cache y log dentro de var:
 
 Fichero .env donde tenemos las variables de conexión a la base de datos:
 
-**DB_USER=root**
-**DB_PASSWORD=dbrootpass**
-**DB_HOST=add-dbms**
-**DB_NAME=nba**
-**DATABASE_URL="mysql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:3306/${DB_NAME}?serverVersion=5.7"**
+**DB_USER=root**  
+**DB_PASSWORD=dbrootpass**  
+**DB_HOST=add-dbms**  
+**DB_NAME=nba**  
+**DATABASE_URL="mysql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:3306/${DB_NAME}?serverVersion=5.7"**  
 
 Añade esto al fichero .sql de creación del esquema de la base de datos, antes de drop table if exists equipos:
 
@@ -97,16 +97,16 @@ Dentro del container ejecuta composer **require beberlei/doctrineextensions** (t
 
 Dentro de config/pacakges/doctrine.yaml añade las siguientes líneas:
 
-**group_concat: DoctrineExtensions\Query\Mysql\GroupConcat**
-**date_format: DoctrineExtensions\Query\Mysql\DateFormat**
-**round: DoctrineExtensions\Query\Mysql\Round**
+**group_concat: DoctrineExtensions\Query\Mysql\GroupConcat**  
+**date_format: DoctrineExtensions\Query\Mysql\DateFormat**  
+**round: DoctrineExtensions\Query\Mysql\Round**  
 
 ![image4](https://github.com/julenrob/api-nba/blob/master/Readme%20Images/4.png?raw=true)
 
 PARA LA ENTREGA DEL PROYECTO EJECUTAR LOS COMANDOS:
-**rm -r var/cache/***
-**rm -r var/log/***
-**rm -r vendor/***
+**rm -r var/cache/***  
+**rm -r var/log/***  
+**rm -r vendor/***  
 Zip del container entero
 
 ## QueryA
