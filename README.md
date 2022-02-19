@@ -27,10 +27,10 @@ Ahora movemos todos los archivos y directorios de esta carpeta a la carpeta supe
 Una vez hecho esto borra la carpeta api-nba.
 
 Dentro de la carpeta provisisioning/sites-enabled cambia las siguientes líneas por:
-ServerName apinba.local
-ServerAlias apinba.local
-DocumentRoot /code/public/
-<Directory "/code/public">
+**ServerName apinba.local**
+**ServerAlias apinba.local**
+**DocumentRoot /code/public/**
+**<Directory "/code/public">**
 
 Tiene que quedar así:
 
@@ -43,16 +43,16 @@ Permisos para todos a las carpetas cache y log dentro de var:
 
 Fichero .env donde tenemos las variables de conexión a la base de datos:
 
-DB_USER=root
-DB_PASSWORD=dbrootpass
-DB_HOST=add-dbms
-DB_NAME=nba
-DATABASE_URL="mysql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:3306/${DB_NAME}?serverVersion=5.7"
+**DB_USER=root**
+**DB_PASSWORD=dbrootpass**
+**DB_HOST=add-dbms**
+**DB_NAME=nba**
+**DATABASE_URL="mysql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:3306/${DB_NAME}?serverVersion=5.7"**
 
 Añade esto al fichero .sql de creación del esquema de la base de datos, antes de drop table if exists equipos:
 
-create schema if not exists nba;
-use nba;
+**create schema if not exists nba;**
+**use nba;**
 
 De esta forma, si en el futuro necesitáramos poner la base de datos a sus valores iniciales podremos hacerlo con el comando que veremos a continuación.
 
@@ -81,7 +81,7 @@ Ahora dentro de cada Entity creado añadimos el namespace App\Entity; y en las c
 
 Ahora crearemos dentro de la carpeta Repository un repositorio para cada Entity para poder crear selecciones de datos personalizadas, más allá del findOneBy, findOne, etcétera, las clases php extenderán de EntityRepository.
 
-Dentro de cada Entity vamos a indicar que tiene un repositorio individual en el que buscar selecciones de datos personalizados, las primeras anotaciones que hacemos en cada entity tienen una etiqueta que pone “@ORM\Entity”: en la cual vamos a añadir (repositoryClass=”App\Repository\EquiposRepository”) donde Equipos es el nombre de la Entity.
+Dentro de cada Entity vamos a indicar que tiene un repositorio individual en el que buscar selecciones de datos personalizados, las primeras anotaciones que hacemos en cada entity tienen una etiqueta que pone **“@ORM\Entity”**: en la cual vamos a añadir **(repositoryClass=”App\Repository\EquiposRepository”)** donde Equipos es el nombre de la Entity.
 Aquí desarrollaremos las funciones que albergarán las querys necesarias para hacer las búsquedas.
 
 
@@ -97,9 +97,9 @@ Dentro del container ejecuta composer **require beberlei/doctrineextensions** (t
 
 Dentro de config/pacakges/doctrine.yaml añade las siguientes líneas:
 
-group_concat: DoctrineExtensions\Query\Mysql\GroupConcat
-date_format: DoctrineExtensions\Query\Mysql\DateFormat
-round: DoctrineExtensions\Query\Mysql\Round
+**group_concat: DoctrineExtensions\Query\Mysql\GroupConcat**
+**date_format: DoctrineExtensions\Query\Mysql\DateFormat**
+**round: DoctrineExtensions\Query\Mysql\Round**
 
 ![image4](https://github.com/julenrob/api-nba/blob/master/Readme%20Images/4.png?raw=true)
 
