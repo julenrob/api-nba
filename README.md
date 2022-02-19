@@ -35,25 +35,11 @@ DocumentRoot /code/public/
 Tiene que quedar así:
 
 
-![alt text](https://github.com/julenrob/api-nba/blob/master/Readme%20Images/1.png?raw=true)
-
-
-
-
-
-
-
-
-
-
-
+![image1](https://github.com/julenrob/api-nba/blob/master/Readme%20Images/1.png?raw=true)
 
 Permisos para todos a las carpetas cache y log dentro de var:
 root@440a097a8522:/code# chmod -R 777 var/cache/*
 root@440a097a8522:/code# chmod -R 777 var/log/
-
-
-
 
 Fichero .env donde tenemos las variables de conexión a la base de datos:
 
@@ -62,7 +48,6 @@ DB_PASSWORD=dbrootpass
 DB_HOST=add-dbms
 DB_NAME=nba
 DATABASE_URL="mysql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:3306/${DB_NAME}?serverVersion=5.7"
-
 
 Añade esto al fichero .sql de creación del esquema de la base de datos, antes de drop table if exists equipos:
 
@@ -78,24 +63,13 @@ mysql -u root -pdbrootpass -h add-dbms < files/nba_2022-02-02.sql
 
 Conectamos datagrip a la base de datos nba con el puerto 33006 y el usuario root y contraseña dbrootpass.
 
-
-
-
-
-
-
-
-
-
-
-
 Para introducir la información en la base de datos de los archivos .csv utilizaremos python.
 
-
+![image2](https://github.com/julenrob/api-nba/blob/master/Readme%20Images/2.png?raw=true)
 
 Siguiendo este ejemplo realizaremos la carga de datos en la base de datos, sin olvidarnos de el orden correcto, equipos, jugadores, partidos y estadísticas (al haber claves foráneas que apuntan a otras tablas de no crearlas en el orden correcto tendríamos fallos).
 
-
+![image3](https://github.com/julenrob/api-nba/blob/master/Readme%20Images/3.png?raw=true)
 
 Una vez tenemos dentro de la base de datos los datos, pasamos a crear las Entities con las que vamos a trabajar (es el formato que entiende Symfony para los distintos objetos de la base de datos).
 Dentro del container ejecuta:
@@ -119,7 +93,6 @@ https://github.com/beberlei/DoctrineExtensions
 Para cuando necesites usar el group concat, dateFormat, round (redondear), entre otros bundles externos a los que trae Symfony por defecto.
 
 
-
 Dentro del container ejecuta composer require beberlei/doctrineextensions (tumba el container y vuelve a levantarlo).
 
 Dentro de config/pacakges/doctrine.yaml añade las siguientes líneas:
@@ -128,7 +101,7 @@ group_concat: DoctrineExtensions\Query\Mysql\GroupConcat
 date_format: DoctrineExtensions\Query\Mysql\DateFormat
 round: DoctrineExtensions\Query\Mysql\Round
 
-
+![image4](https://github.com/julenrob/api-nba/blob/master/Readme%20Images/4.png?raw=true)
 
 PARA LA ENTREGA DEL PROYECTO EJECUTAR LOS COMANDOS:
 rm -r var/cache/*
