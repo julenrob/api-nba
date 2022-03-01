@@ -2,9 +2,17 @@
 #    path: /
 #    controller: App\Controller\DefaultController::index
 
+api_login_check:
+  path: /api/login_check
+
+app.swagger:
+  path: /doc/api.json
+  methods: GET
+  defaults: { _controller: nelmio_api_doc.controller.swagger }
+
 # A) WORKING
 teamsInfo:
-  path: equipos
+  path: /api/equipos
   controller: App\Controller\EquiposController::teamsInfo
 
 #  B) WORKING

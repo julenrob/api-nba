@@ -7,8 +7,24 @@ use \Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 
+use Nelmio\ApiDocBundle\Annotation\Model;
+use Nelmio\ApiDocBundle\Annotation\Security;
+use OpenApi\Annotations as OA;
+use Symfony\Component\Routing\Annotation\Route;
+
 class EquiposController extends AbstractController
 {
+
+    /**
+     * @Route("/api/{user}/rewards", methods={"GET"})
+     * @OA\Response(
+     *     response=200,
+     *     description="Returns the rewards of an user",
+     * )
+     * @OA\Tag(name="equipos")
+     * @Security(name="Bearer")
+     */
+
     # A) WORKING
     public function teamsInfo(){
         $teamsArray=$this->getDoctrine()
