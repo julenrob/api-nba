@@ -2,8 +2,11 @@ nelmio_api_doc:
     documentation:
         info:
             title: API NBA
-            description: This is an awesome app!
+            description: Documentación del API NBA by Julen Martínez Pérez
             version: 1.0.0
     areas: # to filter documented areas
         path_patterns:
-            - ^/doc(?!/api) # Accepts routes under /api except /api/doc
+            - ^/api(?!/doc$) # Accepts routes under /api except /api/doc
+
+
+    # https://symfony.com/bundles/NelmioApiDocBundle/current/areas.html

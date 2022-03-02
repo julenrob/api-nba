@@ -5,10 +5,11 @@
 api_login_check:
   path: /api/login_check
 
-app.swagger:
-  path: /doc/api.json
+app.swagger_ui:
+  path: /doc
   methods: GET
-  defaults: { _controller: nelmio_api_doc.controller.swagger }
+  # swagger_ui mandatory to show documentation interface
+  defaults: { _controller: nelmio_api_doc.controller.swagger_ui }
 
 # A) WORKING
 teamsInfo:
@@ -17,7 +18,7 @@ teamsInfo:
 
 #  B) WORKING
 teamsInfoByName:
-  path: equipos/{nombre}
+  path: /api/equipos/{nombre}
   controller: App\Controller\EquiposController::teamsInfoByName
 
 #  C) WORKING

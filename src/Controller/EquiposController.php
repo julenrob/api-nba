@@ -16,7 +16,7 @@ class EquiposController extends AbstractController
 {
 
     /**
-     * @Route("/api/{user}/rewards", methods={"GET"})
+     * @Route("/equipos", methods={"GET"})
      * @OA\Response(
      *     response=200,
      *     description="Returns the rewards of an user",
@@ -33,6 +33,16 @@ class EquiposController extends AbstractController
             ->showTeamsInfo();
         return new JsonResponse($teamsArray);
     }
+
+    /**
+     * @Route("/equipos/{nombre}", methods={"GET"})
+     * @OA\Response(
+     *     response=200,
+     *     description="Returns the rewards of an user",
+     * )
+     * @OA\Tag(name="equipos")
+     * @Security(name="Bearer")
+     */
 
     # B) WORKING
     public function teamsInfoByName(Request $request){
