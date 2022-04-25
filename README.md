@@ -26,7 +26,7 @@ Ahora movemos todos los archivos y directorios de esta carpeta a la carpeta supe
 
 Una vez hecho esto borra la carpeta api-nba.
 
-Dentro de la carpeta provisisioning/sites-enabled cambia las siguientes líneas por:  
+Dentro de la carpeta provisisioning/sites-enabled/vhost.conf cambia las siguientes líneas por:  
 **ServerName apinba.local**  
 **ServerAlias apinba.local**  
 **DocumentRoot /code/public/**  
